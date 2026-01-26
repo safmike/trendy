@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sydney's Hottest Cafes Right Now | Trending on Social</title>
+    <title>Brisbane's Hottest Cafes Right Now | Trending on Social</title>
     <style>
         * {
             margin: 0;
@@ -265,8 +265,8 @@
 <body>
     <div class="hero">
         <a href="index.html" style="position: absolute; top: 20px; left: 20px; color: white; text-decoration: none; font-size: 1.5em; font-weight: 800; z-index: 100; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">← TRENDY</a>
-        <h1>☕ Sydney's Hottest Cafes</h1>
-        <p>The cafes everyone's talking about on TikTok & Instagram right now. Updated weekly with the freshest Sydney cafe buzz.</p>
+        <h1>☕ Brisbane's Hottest Cafes</h1>
+        <p>The cafes everyone's talking about on TikTok & Instagram right now. Updated weekly with the freshest Brisbane cafe buzz.</p>
         <div class="badge">🔥 Last updated: January 2026</div>
     </div>
 
@@ -275,40 +275,177 @@
             <label for="areaFilter">Filter by area:</label>
             <select id="areaFilter" onchange="filterCafes()">
                 <option value="all">All Areas</option>
-                <option value="CBD">CBD & Surry Hills</option>
-                <option value="Bondi">Bondi & Eastern Beaches</option>
+                <option value="CBD">CBD & Fortitude Valley</option>
+                <option value="Inner North">Inner North</option>
                 <option value="Inner West">Inner West</option>
-                <option value="North">North Shore & Beaches</option>
-                <option value="West">Western Sydney</option>
+                <option value="Bayside">Bayside</option>
             </select>
             
             <label for="vibeFilter">Vibe:</label>
             <select id="vibeFilter" onchange="filterCafes()">
                 <option value="all">All Vibes</option>
-                <option value="aesthetic">Aesthetic</option>
-                <option value="korean">Korean</option>
+                <option value="asian">Asian Fusion</option>
                 <option value="bakery">Bakery</option>
-                <option value="waterfront">Waterfront</option>
+                <option value="aesthetic">Aesthetic</option>
+                <option value="thai">Thai</option>
             </select>
         </div>
 
         <div class="cafe-grid" id="cafeGrid">
-            <!-- Up South Bondi -->
-            <div class="cafe-card" data-area="Bondi" data-vibe="aesthetic">
+            <!-- So What Stereo -->
+            <div class="cafe-card" data-area="CBD" data-vibe="thai">
                 <div class="cafe-header">
                     <div class="viral-badge">🔥 VIRAL</div>
-                    <h2>Up South</h2>
-                    <div class="cafe-location">📍 Bondi Beach</div>
+                    <h2>So What Stereo</h2>
+                    <div class="cafe-location">📍 Little Street, Fortitude Valley</div>
                 </div>
                 <div class="cafe-body">
-                    <p class="cafe-description">TikTok's favorite Sydney cafe of 2024! The matcha croissants and pistachio treats here have broken the internet. Lines wrap around the block, but everyone agrees it's worth the wait.</p>
+                    <p class="cafe-description">Brisbane's first Thai vinyl cafe and one of 2025's biggest success stories. Hidden in The Valley, this mid-century gem blends retro whimsy with Thai street food brilliance.</p>
                     <div class="highlight">
-                        <strong>Must-Try:</strong> Iced Strawberry Matcha, Iced Pistachio Matcha, matcha croissant, pistachio croissant (the crookie!)
+                        <strong>Must-Try:</strong> Khao soi, congee, kao lao sets, kai kon (Thai-style scrambled eggs), Single O coffee
                     </div>
                     <div class="tags">
-                        <span class="tag">TikTok Legend</span>
-                        <span class="tag">Matcha Heaven</span>
-                        <span class="tag">Queue-Worthy</span>
+                        <span class="tag">Thai Street Food</span>
+                        <span class="tag">Vinyl Vibes</span>
+                        <span class="tag">Cult Status</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Idle -->
+            <div class="cafe-card" data-area="Inner North" data-vibe="bakery">
+                <div class="cafe-header">
+                    <div class="viral-badge">🔥 VIRAL</div>
+                    <h2>Idle</h2>
+                    <div class="cafe-location">📍 New Farm</div>
+                </div>
+                <div class="cafe-body">
+                    <p class="cafe-description">The evolution of beloved Agnes Bakery. Sleek Tamsin Johnson design meets next-level baked goods and a coal-fired rotisserie.</p>
+                    <div class="highlight">
+                        <strong>Must-Try:</strong> Baghdad eggs with smoked almond crumb and labneh, cross-laminated pain au chocolat, tonka bean kouign-amann, coal-fired rotisserie chicken
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Anyday Group</span>
+                        <span class="tag">Bakery Excellence</span>
+                        <span class="tag">Market Section</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cafe Disco -->
+            <div class="cafe-card" data-area="Inner West" data-vibe="asian">
+                <div class="cafe-header">
+                    <div class="viral-badge">🔥 VIRAL</div>
+                    <h2>Cafe Disco</h2>
+                    <div class="cafe-location">📍 West End</div>
+                </div>
+                <div class="cafe-body">
+                    <p class="cafe-description">Bright yellow facade, impossible to miss. Bangladeshi-Australian fusion that Gerald Ong called his favorite bite of the year.</p>
+                    <div class="highlight">
+                        <strong>Must-Try:</strong> Bangladeshi-inspired breakfast dishes, lunch specials blending two cultures, evening cocktails
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Cultural Fusion</span>
+                        <span class="tag">All-Day Diner</span>
+                        <span class="tag">Gerald Ong Approved</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Landing Bakery -->
+            <div class="cafe-card" data-area="Bayside" data-vibe="bakery">
+                <div class="cafe-header">
+                    <div class="viral-badge">🔥 VIRAL</div>
+                    <h2>Landing Bakery</h2>
+                    <div class="cafe-location">📍 Scarborough</div>
+                </div>
+                <div class="cafe-body">
+                    <p class="cafe-description">Coastal gem from Anytime Coffee and Riser Bread alumni. Architectural finesse meets creative pastries that are both classic and clever.</p>
+                    <div class="highlight">
+                        <strong>Must-Try:</strong> Gochujang scrolls, citrus morning buns, perfectly seasoned sausage rolls
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Coastal Vibes</span>
+                        <span class="tag">Award-Winning Design</span>
+                        <span class="tag">Moreton Bay</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alby's -->
+            <div class="cafe-card" data-area="Inner North" data-vibe="aesthetic">
+                <div class="cafe-header">
+                    <div class="viral-badge">🔥 VIRAL</div>
+                    <h2>Alby's</h2>
+                    <div class="cafe-location">📍 Wavell Heights</div>
+                </div>
+                <div class="cafe-body">
+                    <p class="cafe-description">From hospo veteran Daniel Bowles. Single O coffee meets trending treats in a charming suburban setting.</p>
+                    <div class="highlight">
+                        <strong>Must-Try:</strong> Beef rendang toastie (the icon), iced tiramisu drink with cold vanilla foam
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Trending Toasties</span>
+                        <span class="tag">Single O</span>
+                        <span class="tag">Suburban Gem</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semi Semi -->
+            <div class="cafe-card" data-area="Inner North" data-vibe="asian">
+                <div class="cafe-header">
+                    <h2>Semi Semi</h2>
+                    <div class="cafe-location">📍 Newstead</div>
+                </div>
+                <div class="cafe-body">
+                    <p class="cafe-description">Brisbane's bingsu breakthrough. Korean shaved ice desserts finally get the spotlight they deserve beyond Sunnybank.</p>
+                    <div class="highlight">
+                        <strong>Must-Try:</strong> Taro and black sesame bingsu, Earl Grey and Thai tea varieties, plant-based coconut mango chocolate
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Korean Desserts</span>
+                        <span class="tag">Bingsu Specialists</span>
+                        <span class="tag">Customizable Toppings</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speed Dial -->
+            <div class="cafe-card" data-area="Inner North" data-vibe="aesthetic">
+                <div class="cafe-header">
+                    <h2>Speed Dial</h2>
+                    <div class="cafe-location">📍 Newstead (Bunnings Carpark)</div>
+                </div>
+                <div class="cafe-body">
+                    <p class="cafe-description">One of Brisbane's tiniest and best new cafes, operating from a 30sqm shipping container. Yes, it's in the Bunnings carpark.</p>
+                    <div class="highlight">
+                        <strong>Must-Try:</strong> Coffee Supreme's South blend, toasties with marinara dipping sauce, daily batch brew, matcha drinks
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Shipping Container</span>
+                        <span class="tag">Tiny But Mighty</span>
+                        <span class="tag">Walk-In Only</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smidge Bakery -->
+            <div class="cafe-card" data-area="Inner North" data-vibe="bakery">
+                <div class="cafe-header">
+                    <div class="viral-badge">🔥 VIRAL</div>
+                    <h2>Smidge Bakery</h2>
+                    <div class="cafe-location">📍 Leederville</div>
+                </div>
+                <div class="cafe-body">
+                    <p class="cafe-description">Self-proclaimed home of "Perth's best cinny scrolls" and they might be right. Selling 20 trays a day in their new bigger space.</p>
+                    <div class="highlight">
+                        <strong>Must-Try:</strong> Cinnamon scrolls (the legend), choc caramel brownies, salted Caramilk cookies, sangas
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Scroll Mania</span>
+                        <span class="tag">Viral Success</span>
+                        <span class="tag">New Location</span>
                     </div>
                 </div>
             </div>
@@ -321,170 +458,33 @@
                     <div class="cafe-location">📍 Stanmore</div>
                 </div>
                 <div class="cafe-body">
-                    <p class="cafe-description">Home to 2025's It Baked Good: the cinnamon scroll that sold out in three hours. Classic, unhurried vibes with red curtains, chandeliers, and piano jazz.</p>
+                    <p class="cafe-description">Home of 2025's It Baked Good: the cinnamon scroll that sold out in three hours. Classic vibes with red curtains, chandeliers, and piano jazz.</p>
                     <div class="highlight">
-                        <strong>Must-Try:</strong> Signature cinnamon scroll with vanilla cream, Scent of Stanmore carrot cake
+                        <strong>Must-Try:</strong> Signature cinnamon scroll with vanilla cream (THE ONE), Scent of Stanmore carrot cake
                     </div>
                     <div class="tags">
-                        <span class="tag">Cinnamon Scroll Icon</span>
-                        <span class="tag">Old-Timey Vibes</span>
-                        <span class="tag">Black Star Pastry Alumni</span>
+                        <span class="tag">Scroll Royalty</span>
+                        <span class="tag">Old-Timey Charm</span>
+                        <span class="tag">Black Star Alumni</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Cafe Margaret -->
+            <!-- Coffee Anthology -->
             <div class="cafe-card" data-area="CBD" data-vibe="aesthetic">
                 <div class="cafe-header">
-                    <div class="viral-badge">🔥 VIRAL</div>
-                    <h2>Cafe Margaret</h2>
-                    <div class="cafe-location">📍 Double Bay</div>
+                    <h2>Coffee Anthology</h2>
+                    <div class="cafe-location">📍 CBD</div>
                 </div>
                 <div class="cafe-body">
-                    <p class="cafe-description">Neil Perry's latest transformation in Double Bay. From 7am daily, serving elevated cafe fare plus the famous burger that ranked in the World's Best list.</p>
+                    <p class="cafe-description">Named 8th best coffee shop in the world in 2025. Multi-roaster approach with Mecca coffee, pastries from Fika, cookies from Butter Boy.</p>
                     <div class="highlight">
-                        <strong>Must-Try:</strong> Four-cheese toastie, the famed Next Door burger, bacon and egg roll
+                        <strong>Must-Try:</strong> Rotating coffee roasts matched to brewing methods, caramelised banana rice pudding, pandan waffles, croissant eggs benedict
                     </div>
                     <div class="tags">
-                        <span class="tag">Celebrity Chef</span>
-                        <span class="tag">World's Best Burger</span>
-                        <span class="tag">Double Bay Chic</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Chubby Cubby -->
-            <div class="cafe-card" data-area="CBD" data-vibe="aesthetic">
-                <div class="cafe-header">
-                    <div class="viral-badge">🔥 VIRAL</div>
-                    <h2>Chubby Cubby</h2>
-                    <div class="cafe-location">📍 Haymarket, George St</div>
-                </div>
-                <div class="cafe-body">
-                    <p class="cafe-description">The best matcha in Sydney according to viral TikToks. About to drop a whole new matcha and shokupan menu that's already generating massive hype.</p>
-                    <div class="highlight">
-                        <strong>Must-Try:</strong> Signature matcha drinks, Japanese shokupan (milk bread), matcha latte
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Matcha King</span>
-                        <span class="tag">Japanese Vibes</span>
-                        <span class="tag">Viral Videos</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Speedos Cafe -->
-            <div class="cafe-card" data-area="Bondi" data-vibe="waterfront">
-                <div class="cafe-header">
-                    <div class="viral-badge">🔥 VIRAL</div>
-                    <h2>Speedos Cafe</h2>
-                    <div class="cafe-location">📍 North Bondi</div>
-                </div>
-                <div class="cafe-body">
-                    <p class="cafe-description">Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.</p>
-                    <div class="highlight">
-                        <strong>Must-Try:</strong> Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Beach Views</span>
-                        <span class="tag">Iconic Location</span>
-                        <span class="tag">Instagram Famous</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cafe Cressida -->
-            <div class="cafe-card" data-area="CBD" data-vibe="aesthetic">
-                <div class="cafe-header">
-                    <h2>Cafe Cressida</h2>
-                    <div class="cafe-location">📍 Queens Court, Paddington</div>
-                </div>
-                <div class="cafe-body">
-                    <p class="cafe-description">From the Ursula's team: daytime eating with a cheffy edge. Beautiful courtyard space serving elevated classics from breakfast through dinner.</p>
-                    <div class="highlight">
-                        <strong>Must-Try:</strong> Gruyere toastie on Iggy's bread, silky scrambles with bacon, French toast, prawn cocktail toasts
-                    </div>
-                    <div class="tags">
-                        <span class="tag">High-Low Vibe</span>
-                        <span class="tag">Courtyard Dining</span>
-                        <span class="tag">Chef-Driven</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Manteiga -->
-            <div class="cafe-card" data-area="CBD" data-vibe="aesthetic">
-                <div class="cafe-header">
-                    <h2>Manteiga</h2>
-                    <div class="cafe-location">📍 Darlinghurst</div>
-                </div>
-                <div class="cafe-body">
-                    <p class="cafe-description">Portuguese-inspired spot from former Bentley and Dinner by Heston chef. Family recipes meet elevated cafe culture.</p>
-                    <div class="highlight">
-                        <strong>Must-Try:</strong> Manteiga Muffin (Bolos Lêvedos from grandfather's recipe), soft eggs with double-smoked bacon
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Portuguese Flavors</span>
-                        <span class="tag">Family Recipes</span>
-                        <span class="tag">Michelin Pedigree</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Circa Espresso -->
-            <div class="cafe-card" data-area="West" data-vibe="aesthetic">
-                <div class="cafe-header">
-                    <div class="viral-badge">🔥 VIRAL</div>
-                    <h2>Circa Espresso</h2>
-                    <div class="cafe-location">📍 Parramatta</div>
-                </div>
-                <div class="cafe-body">
-                    <p class="cafe-description">Winner of Time Out's People's Choice Award for Best Cafe 2025. The Ottoman eggs have achieved cult status and put Parramatta on the breakfast map.</p>
-                    <div class="highlight">
-                        <strong>Must-Try:</strong> Ottoman eggs (creamy garlic labne, fried eggplant, chilli oil, crisp leeks, poached eggs), in-house roasted coffee
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Award Winner</span>
-                        <span class="tag">Middle Eastern</span>
-                        <span class="tag">Cult Following</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bote -->
-            <div class="cafe-card" data-area="North" data-vibe="waterfront">
-                <div class="cafe-header">
-                    <h2>Bote</h2>
-                    <div class="cafe-location">📍 Manly Boatshed</div>
-                </div>
-                <div class="cafe-body">
-                    <p class="cafe-description">Breezy Northern Beaches vibes on the water. Coffee from Mecca, pastries from Staple, cookies from Butter Boy. Dogs and families welcome.</p>
-                    <div class="highlight">
-                        <strong>Must-Try:</strong> Coffee and pastries on the deck, feet dangling over the water
-                    </div>
-                    <div class="tags">
-                        <span class="tag">On The Water</span>
-                        <span class="tag">Dog-Friendly</span>
-                        <span class="tag">Northern Beaches</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Happyfield -->
-            <div class="cafe-card" data-area="Inner West" data-vibe="bakery">
-                <div class="cafe-header">
-                    <h2>Happyfield</h2>
-                    <div class="cafe-location">📍 Haberfield</div>
-                </div>
-                <div class="cafe-body">
-                    <p class="cafe-description">Bright yellow corner cafe bringing Canadian-style pancakes to Sydney's Italian heartland. From ex-Grounds team, serving proper North American diner vibes.</p>
-                    <div class="highlight">
-                        <strong>Must-Try:</strong> Canadian pancake stacks with 100% maple syrup, breakfast platter for two, coddled eggs, soft-serve acai sundae
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Canadian Style</span>
-                        <span class="tag">Pancake Stacks</span>
-                        <span class="tag">Diner Vibes</span>
+                        <span class="tag">World's 8th Best</span>
+                        <span class="tag">Multi-Roaster</span>
+                        <span class="tag">Industrial Chic</span>
                     </div>
                 </div>
             </div>
@@ -493,7 +493,7 @@
 
     <div class="cta-section">
         <h2>Never Miss a Trending Cafe 🔥</h2>
-        <p>Get weekly updates on Sydney's hottest new cafes delivered straight to your inbox</p>
+        <p>Get weekly updates on Brisbane's hottest new cafes delivered straight to your inbox</p>
         <form onsubmit="handleSubmit(event)">
             <input type="email" placeholder="Your email address" required>
             <button type="submit">Get Updates</button>
@@ -502,7 +502,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Sydney's Hottest Cafes | Curated weekly with love ☕</p>
+        <p>&copy; 2026 Brisbane's Hottest Cafes | Curated weekly with love ☕</p>
         <p style="margin-top: 10px; opacity: 0.7; font-size: 0.9em;">
             Follow the hype: <a href="#">Instagram</a> | <a href="#">TikTok</a>
         </p>
@@ -532,7 +532,7 @@
         function handleSubmit(event) {
             event.preventDefault();
             const email = event.target.querySelector('input').value;
-            alert(`Thanks for subscribing! We'll send Sydney's hottest cafe updates to ${email} 🔥☕`);
+            alert(`Thanks for subscribing! We'll send Brisbane's hottest cafe updates to ${email} 🔥☕`);
             event.target.reset();
         }
     </script>
