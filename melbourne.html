@@ -272,7 +272,7 @@
 </head>
 <body>
     <div class="hero">
-        <a href="index.html" style="position: absolute; top: 20px; left: 20px; color: white; text-decoration: none; font-size: 1.5em; font-weight: 800; z-index: 100; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">← TRENDY</a>
+        <a href="index.html" style="position: absolute; top: 20px; left: 20px; color: white; text-decoration: none; font-size: 1.5em; font-weight: 800; z-index: 100; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">← TRNDIE</a>
         <h1>☕ Melbourne's Hottest Cafes</h1>
         <p>The cafes everyone's talking about on TikTok & Instagram right now. Updated weekly with the freshest Melbourne cafe buzz.</p>
         <div class="badge">🔥 Last updated: January 2026</div>
@@ -348,7 +348,7 @@
                     <div class="cafe-location">📍 CBD (Near Queen Vic Market)</div>
                 </div>
                 <div class="cafe-body">
-                    <p class="cafe-description">Somewhere between a cafe and a bar, this trendy spot serves creative drinks with unique twists. Warm orange lighting draws you in from the laneway.</p>
+                    <p class="cafe-description">Somewhere between a cafe and a bar, this TRNDIE spot serves creative drinks with unique twists. Warm orange lighting draws you in from the laneway.</p>
                     <div class="highlight">
                         <strong>Must-Try:</strong> In Btwn Dirty ($6.50) with orange zest, Einspanner ($9.50), Matcha Einspanner
                     </div>
@@ -368,7 +368,7 @@
                     <div class="cafe-location">📍 CBD, Elizabeth Street</div>
                 </div>
                 <div class="cafe-body">
-                    <p class="cafe-description">Seoul's trendy cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream "doughnuts".</p>
+                    <p class="cafe-description">Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream "doughnuts".</p>
                     <div class="highlight">
                         <strong>Must-Try:</strong> Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud
                     </div>
@@ -502,10 +502,10 @@
     <div class="cta-section">
         <h2>Never Miss a Trending Cafe 🔥</h2>
         <p>Get weekly updates on Melbourne's hottest new cafes delivered straight to your inbox</p>
-        <form onsubmit="handleSubmit(event)">
-            <input type="email" placeholder="Your email address" required>
-            <button type="submit">Get Updates</button>
-        </form>
+        <form action="https://buttondown.com/api/emails/embed-subscribe/TRNDIE" method="post" target="_blank">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Get Updates</button>
+</form>
         <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9em;">Want your cafe featured? <a href="mailto:hello@example.com" style="color: white; text-decoration: underline;">Submit here</a></p>
     </div>
 
@@ -537,12 +537,6 @@
             });
         }
 
-        function handleSubmit(event) {
-            event.preventDefault();
-            const email = event.target.querySelector('input').value;
-            alert(`Thanks for subscribing! We'll send Melbourne's hottest cafe updates to ${email} 🔥☕`);
-            event.target.reset();
-        }
-    </script>
+</script>
 </body>
 </html>
